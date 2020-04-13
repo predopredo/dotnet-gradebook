@@ -10,3 +10,16 @@
 /Users/predopredo/dotnet/gradebook/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.dll
 /Users/predopredo/dotnet/gradebook/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.pdb
 /Users/predopredo/dotnet/gradebook/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.genruntimeconfig.cache
+/home/predopredo/study/dotnet-gradebook/src/GradeBook/bin/Debug/netcoreapp3.1/GradeBook
+/home/predopredo/study/dotnet-gradebook/src/GradeBook/bin/Debug/netcoreapp3.1/GradeBook.deps.json
+/home/predopredo/study/dotnet-gradebook/src/GradeBook/bin/Debug/netcoreapp3.1/GradeBook.runtimeconfig.json
+/home/predopredo/study/dotnet-gradebook/src/GradeBook/bin/Debug/netcoreapp3.1/GradeBook.runtimeconfig.dev.json
+/home/predopredo/study/dotnet-gradebook/src/GradeBook/bin/Debug/netcoreapp3.1/GradeBook.dll
+/home/predopredo/study/dotnet-gradebook/src/GradeBook/bin/Debug/netcoreapp3.1/GradeBook.pdb
+/home/predopredo/study/dotnet-gradebook/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.csprojAssemblyReference.cache
+/home/predopredo/study/dotnet-gradebook/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.csproj.CoreCompileInputs.cache
+/home/predopredo/study/dotnet-gradebook/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.AssemblyInfoInputs.cache
+/home/predopredo/study/dotnet-gradebook/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.AssemblyInfo.cs
+/home/predopredo/study/dotnet-gradebook/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.dll
+/home/predopredo/study/dotnet-gradebook/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.pdb
+/home/predopredo/study/dotnet-gradebook/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.genruntimeconfig.cache

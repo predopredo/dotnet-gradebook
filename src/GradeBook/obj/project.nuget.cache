@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sSeJroR2olKrhK0SSjB93gOXoxK467wUJM6+P2kRuie6RHU3WUmwhMxQ8hzCJ+7I1J963Nu/ExKUN1PKdihT8g==",
+  "dgSpecHash": "uLwicF9zv0C7bLEx1LeiSWOy14xYJt+eHvyQt2juTny88RPLE6gjBmommzHmN4cqKjBn3n0t4xy7gfvf0q7a7A==",
   "success": true,
-  "projectFilePath": "/Users/predopredo/dotnet/gradebook/src/GradeBook/GradeBook.csproj",
+  "projectFilePath": "/home/predopredo/study/dotnet-gradebook/src/GradeBook/GradeBook.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/predopredo/dotnet/gradebook/src/GradeBook/GradeBook.csproj": {}
+    "/home/predopredo/study/dotnet-gradebook/src/GradeBook/GradeBook.csproj": {}
   },
   "projects": {
-    "/Users/predopredo/dotnet/gradebook/src/GradeBook/GradeBook.csproj": {
+    "/home/predopredo/study/dotnet-gradebook/src/GradeBook/GradeBook.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/predopredo/dotnet/gradebook/src/GradeBook/GradeBook.csproj",
+        "projectUniqueName": "/home/predopredo/study/dotnet-gradebook/src/GradeBook/GradeBook.csproj",
         "projectName": "GradeBook",
-        "projectPath": "/Users/predopredo/dotnet/gradebook/src/GradeBook/GradeBook.csproj",
-        "packagesPath": "/Users/predopredo/.nuget/packages/",
-        "outputPath": "/Users/predopredo/dotnet/gradebook/src/GradeBook/obj/",
+        "projectPath": "/home/predopredo/study/dotnet-gradebook/src/GradeBook/GradeBook.csproj",
+        "packagesPath": "/home/predopredo/.nuget/packages/",
+        "outputPath": "/home/predopredo/study/dotnet-gradebook/src/GradeBook/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/predopredo/.nuget/NuGet/NuGet.Config"
+          "/home/predopredo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -50,7 +50,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
         }
       }
     }
