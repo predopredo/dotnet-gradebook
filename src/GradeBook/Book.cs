@@ -34,13 +34,13 @@ namespace GradeBook
         }
         public Statistics GetStatistics()
         {
-            var result = new Statistics();
+            var stats = new Statistics();
 
-            result.Average = GetAverage();
-            result.High = GetMax();
-            result.Low = GetMin();
+            stats.Average = GetAverage();
+            stats.High = GetMax();
+            stats.Low = GetMin();
 
-            return result;
+            return stats;
         }
         private List<double> grades;
         private string name;
