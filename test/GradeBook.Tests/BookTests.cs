@@ -6,10 +6,10 @@ namespace GradeBook.Tests
     public class BookTests
     {
         [Fact]
-        public void Test1()
+        public void BookCalculatesGradeStatistics()
         {   
             // tripe A or AAA (arrange, act, assert)
-            
+
             // arrange (data, arrangements)
             var book = new Book("");
             book.AddGrade(89.1);

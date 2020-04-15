@@ -9,7 +9,7 @@ namespace GradeBook
         public Book(string name)
         {
             grades = new List<double>();
-            this.name = name;
+            Name = name;
         }
         public void AddGrade(double grade)
         {
@@ -30,7 +30,7 @@ namespace GradeBook
         }
         public string GetName()
         {
-            return name;
+            return Name;
         }
         public Statistics GetStatistics()
         {
@@ -43,6 +43,6 @@ namespace GradeBook
             return stats;
         }
         private List<double> grades;
-        private string name;
+        public string Name;  //public members always starts with capital letter
     }
 }
