@@ -11,6 +11,35 @@ namespace GradeBook
             grades = new List<double>();
             Name = name;
         }
+
+        // public void AddLetterGrade(char letter)
+        // {
+        //     switch (letter)
+        //     {
+        //         case 'A':
+        //             AddGrade(90);
+        //             break;
+        //         case 'B':
+        //             AddGrade(80);
+        //             break;
+        //         case 'C':
+        //             AddGrade(70);
+        //             break;
+        //         case 'D':
+        //             AddGrade(70);
+        //             break;
+        //         case 'E':
+        //             AddGrade(60);
+        //             break;
+        //         case 'F':
+        //             AddGrade(50);
+        //             break;
+        //         default: 
+        //             AddGrade(0);
+        //             break;
+        //     }
+        // }
+
         public void AddGrade(double grade)
         {
             if (grade <= 100 && grade >= 0)
@@ -41,25 +70,24 @@ namespace GradeBook
         }
         public Statistics GetStatistics()
         {
-            // var stats = new Statistics();
-
-            // stats.Average = GetAverage();
-            // stats.High = GetMax();
-            // stats.Low = GetMin();
-
-            // return stats;
             var stats = new Statistics();
-            stats.Average = 0.0;
-            stats.High = double.MinValue;
-            stats.Low = double.MaxValue;
 
-            foreach (double grade in grades)
-            {
-                stats.Low = Math.Min(grade, stats.Low);
-                stats.High = Math.Max(grade, stats.High);
-                stats.Average += grade;
-            }
-            stats.Average /= grades.Count;
+            stats.Average = GetAverage();
+            stats.High = GetMax();
+            stats.Low = GetMin();
+
+            // var stats = new Statistics();
+            // stats.Average = 0.0;
+            // stats.High = double.MinValue;
+            // stats.Low = double.MaxValue;
+
+            // foreach (double grade in grades)
+            // {
+            //     stats.Low = Math.Min(grade, stats.Low);
+            //     stats.High = Math.Max(grade, stats.High);
+            //     stats.Average += grade;
+            // }
+            // stats.Average /= grades.Count;
 
             // for (int index = 0; index < grades.Count; index++)
             // {
@@ -88,6 +116,29 @@ namespace GradeBook
             //     index++;
             // } while (index < grades.Count);
             // stats.Average /= grades.Count;
+
+            switch (stats.Average)
+            {
+                case var average when average >= 90.0:
+                    stats.Letter = 'A';
+                    break;
+
+                case var average when average >= 80.0:
+                    stats.Letter = 'B';
+                    break;
+
+                case var average when average >= 70.0:
+                    stats.Letter = 'C';
+                    break;
+
+                case var average when average >= 60.0:
+                    stats.Letter = 'D';
+                    break;
+
+                default:
+                    stats.Letter = 'F';
+                    break;
+            }
 
             return stats;
         }
