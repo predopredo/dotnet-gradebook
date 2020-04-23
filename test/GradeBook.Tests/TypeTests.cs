@@ -88,8 +88,8 @@ namespace GradeBook.Tests
             string name = "Scott";
             string upper = MakeUpperCase(name);
 
-            Assert.Equal(name, "Scott");
-            Assert.Equal(upper, "SCOTT");
+            Assert.Equal("Scott", name);
+            Assert.Equal("SCOTT", upper);
         }
 
         private string MakeUpperCase(string parameter)
