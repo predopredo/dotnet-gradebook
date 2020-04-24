@@ -48,7 +48,7 @@ namespace GradeBook
             }
             else
             {
-                Console.WriteLine("Invalid Value");
+                throw new ArgumentException($"Invalid {nameof(grade)}");
             }
         }
         public double GetMin()
@@ -119,24 +119,28 @@ namespace GradeBook
 
             switch (stats.Average)
             {
+                case var average when average >= 95.0:
+                    stats.Letter = "A+";
+                    break;
+
                 case var average when average >= 90.0:
-                    stats.Letter = 'A';
+                    stats.Letter = "A";
                     break;
 
                 case var average when average >= 80.0:
-                    stats.Letter = 'B';
+                    stats.Letter = "B";
                     break;
 
                 case var average when average >= 70.0:
-                    stats.Letter = 'C';
+                    stats.Letter = "C";
                     break;
 
                 case var average when average >= 60.0:
-                    stats.Letter = 'D';
+                    stats.Letter = "D";
                     break;
 
                 default:
-                    stats.Letter = 'F';
+                    stats.Letter = "F";
                     break;
             }
 
