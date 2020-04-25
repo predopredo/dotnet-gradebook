@@ -48,8 +48,11 @@ namespace GradeBook
             }
             else
             {
-                throw new ArgumentException($"Invalid {nameof(grade)}");
+                throw new ArgumentException($"Invalid {nameof(grade)}. It should be between 0 and 100");
             }
+        }
+        public bool HasGrades() {
+            return grades.Count > 0;
         }
         public double GetMin()
         {

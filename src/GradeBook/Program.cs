@@ -8,21 +8,43 @@ namespace GradeBook
         {
 
             var book = new Book("Pedro's grade book");
+            Console.Clear();
+            Console.WriteLine("Welcome to GradeBook");
 
             while (true)
-            {   
-                // Console.Clear();
-                Console.WriteLine("Welcome to GradeBook");
+            {
                 Console.WriteLine("Enter a grade and press enter or enter 'q' to compute statistics and quit");
                 string input = Console.ReadLine();
 
-                if (input.ToLower() == "q")
+                if (input.ToLower() == "q" && book.HasGrades())
                 {
                     Console.Clear();
                     break;
                 }
+                else if (input.ToLower() == "q")
+                {
+                    Console.Clear();
+                    Console.WriteLine("Please enter at least one grade");
+                    continue;
+                }
 
-                book.AddGrade(double.Parse(input));
+                try
+                {
+                    var grade = double.Parse(input);
+                    book.AddGrade(grade);
+                    Console.Clear();
+                    Console.WriteLine($"Grade Added: {input}");
+                }
+                catch (ArgumentException ex)
+                {
+                    Console.Clear();
+                    Console.WriteLine(ex.Message);
+                }
+                catch (FormatException ex)
+                {
+                    Console.Clear();
+                    Console.WriteLine(ex.Message);
+                }
             }
 
             var stats = book.GetStatistics();
